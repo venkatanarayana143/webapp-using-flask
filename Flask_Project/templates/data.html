@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<style>
+body{
+background-color:aqua;
+}
+  table{
+    width:1100px;
+    margin:auto;
+    table-layout:fixed;
+    text-align:center;
+    margin-top:50px;
+    font-family:Arial;
+    
+  }
+  h1{
+    text-align:center;
+    color:yellow;
+  }
+  table, th, td{
+    border:1px dotted yellow;
+    border-collapse:collapse;
+    padding:20px;
+    font-size:20px;
+    font-color:black;
+  }
+  th{
+    background:pink;
+    padding:30px;
+    
+  }
+  body button{
+    font-size: 20px;
+    margin-left: 550px;
+    background-color: blue;
+    
+  }
+  </style>
+    <table style="margin-top: 8rem;border:2px solid black ;">
+        <tr>
+         
+          <th>High</th>
+          <th>Low</th>
+          <th>Open</th>
+          <th>Close</th>
+          <th>Volume</th>
+          
+         
+        </tr>
+        <tr>
+          
+          <td>{{df.High[0]}}</td>
+          <td>{{df.Low[0]}}</td>
+          <td>{{df.Open[0]}}</td>
+          <td>{{df.Close[0]}}</td>
+          <td>{{df.Volume[0]}}</td>
+          
+        </tr>
+        <tr>
+           
+            <td>{{df.High[0]}}</td>
+            <td>{{df.Low[0]}}</td>
+            <td>{{df.Open[0]}}</td>
+            <td>{{df.Close[0]}}</td>
+            <td>{{df.Volume[0]}}</td>
+            
+          </tr>
+          <tr>
+           
+            <td>{{df.High[0]}}</td>
+            <td>{{df.Low[0]}}</td>
+            <td>{{df.Open[0]}}</td>
+            <td>{{df.Close[0]}}</td>
+            <td>{{df.Volume[0]}}</td>
+            
+          </tr>
+          <tr>
+           
+            <td>{{df.High[0]}}</td>
+            <td>{{df.Low[0]}}</td>
+            <td>{{df.Open[0]}}</td>
+            <td>{{df.Close[0]}}</td>
+            <td>{{df.Volume[0]}}</td>
+            
+          </tr>
+          <tr>
+           
+            <td>{{df.High[0]}}</td>
+            <td>{{df.Low[0]}}</td>
+            <td>{{df.Open[0]}}</td>
+            <td>{{df.Close[0]}}</td>
+            <td>{{df.Volume[0]}}</td>
+            
+          </tr>
+      </table>
+      <body>
+        <a href="{{ url_for('plot')}}">
+            <button>PLOT</button>
+        </a>
+      </body>
+{% endblock %}
